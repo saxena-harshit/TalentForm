@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+       
+        .icon{margin-top:232px;
+        font-size:32px;
+        color:rgb(243, 11, 88);
+        cursor:pointer;
+        text-shadow: 5px 8px 15px rgb(224, 99, 140);
+    
+    }
+    .icon:hover{
+        color:rgb(255, 0, 85);
+        transform: scale(1.2);
+    }
+
+
+    input{ 
+        margin-top: -100px;
+        margin-left: 15px;
+        width: 100%;
+        border: none;
+        outline: none;
+        
+        background: none;
+        font-size: 20px;
+        font-weight: 800;
+        pointer-events: none;
+        
+
+    }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+
+
+<div class="like">
+    
+    <i onclick="count()" class="fas fa-heart icon">	&#10084; </i>
+    <br>
+    <input id="likecount" type ="number" value="0">
+</div>      
+<div class="dislike"></div>
+<span  onclick="count1()" class="icon" style='font-size:31px;font-style:normal;font-weight:bold;'>&#x1F494;</span>
+<br>
+
+<input id="dislikecount" type ="number" value="0">
+</div> 
+
+
+
+<script type="text/javascript" >
+
+var likecount=document.querySelector('#likecount');
+var dislikecount=document.querySelector('#dislikecount');
+
+function count(){
+    likecount.value=parseInt(likecount.value)+1;
+    
+
+    
+}
+
+function count1(){
+    dislikecount.value=parseInt(dislikecount.value)+1;
+  
+    
+}
+
+
+</script>    
+</body>
+</html>

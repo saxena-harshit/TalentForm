@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modal</title>
+  <link href="style1.css" rel="stylesheet">
+  <script defer src="script1.js"></script>
+  
+
+  </script>
+  <style src="C:\xampp\htdocs\comment\css\style.css"></style>
+</head>
+<body>
+  <button data-modal-target="#modal"><img src="cm.png"></button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Comment Box</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+ 
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+<!-- partial:index.partial.html -->
+<section id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div><!--End Comment-->
+          </div><!--End col -->
+          </div><!-- End row -->
+      <div class="row">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div><!--End Container -->
+  </section><!-- end App -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="C:\xampp\htdocs\comment\js\script.js"></script>
+           
+    		</div>
+		</div>
+    </div>
+</section>
+     
+    
+    
+    
+    </div>
+  </div>
+  <div id="overlay"></div>
+</body>
+</html>
